@@ -18,6 +18,7 @@ urlpatterns = [
     path("members/azrael", views.azrael, name="azrael"),
     path("members/steamy", views.steamy, name="steamy"),
     path("members/era", views.rileygibson, name="era"),
-    path("members/widara", views.widara, name="widara")
+    path("members/widara", views.widara, name="widara"),
+    path("members/marsbars", views.venuspenis, name="marsbars")
 
 ]

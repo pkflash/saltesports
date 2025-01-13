@@ -48,3 +48,6 @@ def rileygibson(request):
 
 def widara(request):
     return render(request, "salt/members/widara.html")
+
+def venuspenis(request):
+    return render(request, "salt/members/marsbars.html")
