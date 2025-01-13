@@ -14,6 +14,7 @@ urlpatterns = [
     path("members/nessboy12", views.nessboy12, name="nessboy12"),
     path("members/latios", views.latios, name="latios"),
     path("members/dtier", views.dtier, name="dtier"),
-    path("members/rodnysalt", views.rodnysalt, name="rodnysalt")
+    path("members/rodnysalt", views.rodnysalt, name="rodnysalt"),
+    path("members/azrael", views.azrael, name="azrael")
 
 ]

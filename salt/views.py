@@ -36,3 +36,6 @@ def dtier(request):
 
 def rodnysalt(request):
     return render(request, "salt/members/rodnysalt.html")
+
+def azrael(request):
+    return render(request, "salt/members/azrael.html")
