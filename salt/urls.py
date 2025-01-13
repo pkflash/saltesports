@@ -19,6 +19,15 @@ urlpatterns = [
     path("members/steamy", views.steamy, name="steamy"),
     path("members/era", views.rileygibson, name="era"),
     path("members/widara", views.widara, name="widara"),
-    path("members/marsbars", views.venuspenis, name="marsbars")
-
+    path("members/marsbars", views.venuspenis, name="marsbars"),
+    path("members/fletchling", views.fletchling, name="fletchling"),
+    path("members/lui$", views.luis, name="lui$"),
+    path("members/lonelymatt", views.matt, name="lonelymatt"),
+    path("members/phi", views.phi, name="phi"),
+    path("members/snorlax", views.snorlax, name="snorlax"),
+    path("members/versedace", views.versed, name="versedace"),
+    path("memebers/saltlord", views.saltlord, name="saltlord"),
+    path("memebers/alsoda", views.alsoda, name="alsoda"),
+    path("memebers/ikan", views.ikan, name="ikan"),
+    path("memebers/kurama", views.kurama, name="kurama"),
 ]

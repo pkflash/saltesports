@@ -51,3 +51,33 @@ def widara(request):
 
 def venuspenis(request):
     return render(request, "salt/members/marsbars.html")
+
+def fletchling(request):
+    return render(request, "salt/members/fletchling.html")
+
+def luis(request):
+    return render(request, "salt/members/luis.html")
+
+def matt(request):
+    return render(request, "salt/members/matt.html")
+
+def phi(request):
+    return render(request, "salt/members/phi.html")
+
+def snorlax(request):
+    return render(request, "salt/members/snorlax.html")
+
+def versed(request):
+    return render(request, "salt/members/versedace.html")
+
+def saltlord(request):
+    return render(request, "salt/members/saltlord.html")
+
+def alsoda(request):
+    return render(request, "salt/members/alsoda.html")
+
+def ikan(request):
+    return render(request, "salt/members/ikan.html")
+
+def kurama(request):
+    return render(request, "salt/members/kurama.html")
