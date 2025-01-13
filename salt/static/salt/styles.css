@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'LemonMilkMedium';
+    src: url('fonts/LEMONMILK-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Apply the custom font to a specific element */
+body {
+    font-family: 'LemonMilkMedium', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;         
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+
+h4, h5, h6, p, ul {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+    
+
+/* @font-face {
+    font-family: "gang of three";
+    src: url("/Users/lonelymatt/Downloads/go3v2.ttf");
+}
+
+@font-face {
+    font-family: "lemon milk italic";
+    src: url("\Users\Matthew\Downloads\lemon_milk (1)\LEMONMILK-MediumItalic.otf");
+} */
+
+#logo {
+    width: 100px;
+    height: 100px;
+    float: inherit;
+}
+
+.button {
+    background-color: #111514; /* Gray */
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'LemonMilkMedium', sans-serif;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+.grayButton {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid #e7e7e7;
+  }
+  
+.grayButton:hover {
+    background-color: black;
+    color: white;
+}

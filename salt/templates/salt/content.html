@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salt esports</title>
+    <link rel="stylesheet" href="{% static 'salt/styles.css' %}">
+</head>
+<body>
+    
+<h1>
+    <img id="logo" 
+    src="{% static 'salt/images/logo.png' %}"
+    />
+</h1>    
+<h1>salt esports</h1>
+<h2>norcal based esports team for smash ultimate</h2>
+<h2>
+    <a class="button grayButton" href="http://127.0.0.1:8000/salt">home</a>
+
+
+    <a class="button grayButton" href="{% url 'salt_app:about' %}">ABOUT US</a>
+
+
+    <a class="button grayButton" href="{% url 'salt_app:members' %}">members</a>
+
+
+    <a class="button grayButton" href="{% url 'salt_app:content' %}">content</a>
+
+
+    <a class="button grayButton" href="{% url 'salt_app:recent' %}">recent activity</a>
+
+
+    <a class="button grayButton" href="{% url 'salt_app:gallery' %}">gallery</a>
+</h2>
+
+
+
+<h3>content</h3>
+<h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zVEeZFay3I4?si=CjydaCl268Jbvrh6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</h3>
