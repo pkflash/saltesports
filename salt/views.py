@@ -33,3 +33,6 @@ def latios(request):
 
 def dtier(request):
     return render(request, "salt/members/dtier.html")
+
+def rodnysalt(request):
+    return render(request, "salt/members/rodnysalt.html")
