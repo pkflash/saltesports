@@ -21,3 +21,15 @@ def recent(request):
 
 def puresalt(request):
     return render(request, "salt/members/puresalt.html")
+
+def shrutik(request):
+    return render(request, "salt/members/shrutik.html")
+
+def nessboy12(request):
+    return render(request, "salt/members/nessboy12.html")
+
+def latios(request):
+    return render(request, "salt/members/latios.html")
+
+def dtier(request):
+    return render(request, "salt/members/dtier.html")
