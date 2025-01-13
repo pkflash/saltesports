@@ -20,4 +20,4 @@ def recent(request):
     return render(request, "salt/recent.html")
 
 def puresalt(request):
-    return render(request, "salt/puresalt.html")
+    return render(request, "salt/members/puresalt.html")

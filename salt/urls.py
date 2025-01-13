@@ -9,5 +9,5 @@ urlpatterns = [
     path("gallery", views.gallery, name="gallery"),
     path("members", views.members, name="members"),
     path("recent", views.recent, name="recent"),
-    path("puresalt", views.puresalt, name="puresalt")
+    path("members/puresalt", views.puresalt, name="puresalt")
 ]

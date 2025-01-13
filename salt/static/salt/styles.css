@@ -18,14 +18,14 @@ body {
 
 h1, h2, h3 {
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 
 h4, h5, h6, p, ul {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
     
 
