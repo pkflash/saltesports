@@ -42,3 +42,9 @@ def azrael(request):
 
 def steamy(request):
     return render(request, "salt/members/steamy.html")
+
+def rileygibson(request):
+    return render(request, "salt/members/era.html")
+
+def widara(request):
+    return render(request, "salt/members/widara.html")
