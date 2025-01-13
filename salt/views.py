@@ -39,3 +39,6 @@ def rodnysalt(request):
 
 def azrael(request):
     return render(request, "salt/members/azrael.html")
+
+def steamy(request):
+    return render(request, "salt/members/steamy.html")
