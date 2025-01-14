@@ -48,6 +48,13 @@ h4, h5, h6, p, ul {
 .button {
     background-color: #111514; /* Gray */
     border: none;
+    
+  }
+
+.grayButton {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid #e7e7e7;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
@@ -58,14 +65,30 @@ h4, h5, h6, p, ul {
     transition-duration: 0.4s;
     cursor: pointer;
   }
-
-.grayButton {
-    background-color: rgb(255, 255, 255);
-    color: black;
-    border: 2px solid #e7e7e7;
-  }
   
 .grayButton:hover {
     background-color: black;
     color: white;
+}
+
+.imageButton {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+a {
+    display: inline-block;
+    position: relative; /* Positioning context for the background */
+}
+
+a:hover {
+    background-color: black; /* Changes background on hover */
+}
+
+.imageButton:hover {
+    opacity: 0.8; /* Optional: make the image slightly transparent on hover */
 }

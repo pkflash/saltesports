@@ -1,5 +1,8 @@
 {% extends "salt/saltesports.html" %}
 
+{% load static %}
+
+
 {% block body %}
 
 <h3>members</h3>
@@ -7,7 +10,7 @@
 
    {% block content %} 
     <p>
-        <a class="button grayButton" href="{% url 'salt_app:puresalt' %}">puresalt</a>
+        <a class="button playerButton" href="{% url 'salt_app:puresalt' %}">puresalt</a>
         <a class="button grayButton" href="{% url 'salt_app:shrutik' %}">shrutik</a>
         <a class="button grayButton" href="{% url 'salt_app:nessboy12' %}">nessboy12</a>
         <a class="button grayButton" href="{% url 'salt_app:latios' %}">latios</a>
@@ -22,6 +25,11 @@
         <a class="button grayButton" href="{% url 'salt_app:lui$' %}">lui$</a>
         <a class="button grayButton" href="{% url 'salt_app:phi' %}">phi</a>
         <a class="button grayButton" href="{% url 'salt_app:lonelymatt' %}">lonelymatt</a>
+
+        <!--<a href="{% url 'salt_app:lonelymatt' %}">
+            <img class="imageButton" src="{% static 'salt/images/IMG_7156.jpg' %}" alt="matt">
+        </a> -->
+        
         <a class="button grayButton" href="{% url 'salt_app:snorlax' %}">snorlax</a>
         <a class="button grayButton" href="{% url 'salt_app:versedace' %}">versed ace</a>
 
