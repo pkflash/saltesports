@@ -6,9 +6,11 @@
 {% block body %}
 
 <h3>members</h3>
-
-
-   {% block content %} 
+   {% block content %}
+   <div id="player-container">
+    <a href="{% url 'salt_app:lonelymatt' %}"><img id="player" src="{% static 'salt/images/IMG_7156.jpg' %}"></a>
+        <div id="player_text"><h3>lonelymatt</h3></div>
+    </div>
     <p>
         <a class="grayButton" href="{% url 'salt_app:puresalt' %}">puresalt</a>
         <a class="grayButton" href="{% url 'salt_app:shrutik' %}">shrutik</a>
@@ -24,7 +26,6 @@
         <a class="grayButton" href="{% url 'salt_app:fletchling' %}">fletchling</a>
         <a class="grayButton" href="{% url 'salt_app:lui$' %}">lui$</a>
         <a class="grayButton" href="{% url 'salt_app:phi' %}">phi</a>
-        <a href="{% url 'salt_app:lonelymatt' %}"><img id="player" src="{% static 'salt/images/IMG_7156.jpg' %}"></a>
 
         <!--<a href="{% url 'salt_app:lonelymatt' %}">
             <img class="imageButton" src="{% static 'salt/images/IMG_7156.jpg' %}" alt="matt">

@@ -27,6 +27,12 @@ h4, h5, h6, p, ul {
     margin-left: 25%;
     margin-right: 25%;
 }
+
+div {
+    display: inline-block;
+    margin-left: 25%;
+    margin-right: 25%;
+}
     
 
 /* @font-face {
@@ -65,16 +71,46 @@ h4, h5, h6, p, ul {
     color: white;
 }
 
+/* Container for the image and border */
+#player-container {
+    position: relative;
+    display: inline-block; /* Ensures the container wraps the image tightly */
+    border: 4px solid #e7e7e7; /* Add the border here */
+    padding: 0; /* Ensures no extra space around the image */
+    box-sizing: border-box; /* Includes the border in the container dimensions */
+    transition: 0.5s; /* Optional: smooth background color transition */
+    width: 300px; /* Define image width */
+    height: 300px; /* Maintain aspect ratio */
+    overflow: hidden;
+    
+}
+
+/* Image styling */
 #player {
-    width: 200px; 
-    height: auto; 
-    border: 4px solid #e7e7e7;
-    float: inherit;
+    display: block; /* Avoids inline spacing issues */
+    transition: opacity 0.5s; /* Smooth fading effect */
+    /* max-width: 100%;
+    max-height: 100%; */
+    width: 100%;
+    height: auto;
+    /* aspect-ratio: 1; */
+    object-fit: cover;
+}
+
+/* Hover effect: Image fades, but border stays */
+#player-container:hover #player {
+    opacity: 0.3; /* Only fades the image */
+}
+
+#player_text{
+    opacity: 0.0;
+    position: absolute;
+    top: 0%;
+    left: 2%;
+    /* transform: translate(-50%, -50%); */
     transition-duration: 0.5s;
 }
 
-
-#player:hover{
-    background-color: black;
-    opacity: 0.5;
+#player-container:hover #player_text{
+    opacity: 1.0;
 }
