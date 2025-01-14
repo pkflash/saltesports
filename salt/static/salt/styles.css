@@ -20,12 +20,18 @@ h1, h2, h3 {
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
+    letter-spacing: 3px;
 }
 
 
 h4, h5, h6, p, ul {
     margin-left: 25%;
     margin-right: 25%;
+    letter-spacing: 1px;
+}
+
+ul, li {
+    text-align: left;
 }
 
 div {
@@ -33,6 +39,22 @@ div {
     margin-left: 25%;
     margin-right: 25%;
 }
+
+/* a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    }
+
+a:visited {
+        color: #000000;
+        text-decoration: none;
+        }
+
+a:active {
+    color: #e7e7e7;
+    text-decoration: none;
+    } */
+
     
 
 /* @font-face {
@@ -71,6 +93,15 @@ div {
     color: white;
 }
 
+/* Flexbox container to align player divs horizontally */
+.flex-container {
+    display: flex;
+    justify-content: space-around; /* Space between items */
+    flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+    padding: 20px;
+    gap: 20px; /* Adds space between divs */
+}
+
 /* Container for the image and border */
 #player-container {
     position: relative;
@@ -88,6 +119,7 @@ div {
 /* Image styling */
 #player {
     display: block; /* Avoids inline spacing issues */
+    float: left;
     transition: opacity 0.5s; /* Smooth fading effect */
     /* max-width: 100%;
     max-height: 100%; */
@@ -103,12 +135,16 @@ div {
 }
 
 #player_text{
+    text-align: center;
     opacity: 0.0;
     position: absolute;
     top: 0%;
-    left: 2%;
+    left: 5%;
+    margin: 4px 2px;
+    color: white;
     /* transform: translate(-50%, -50%); */
     transition-duration: 0.5s;
+    letter-spacing: 2px;
 }
 
 #player-container:hover #player_text{

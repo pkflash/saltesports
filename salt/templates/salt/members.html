@@ -7,11 +7,47 @@
 
 <h3>members</h3>
    {% block content %}
-   <div id="player-container">
-    <a href="{% url 'salt_app:lonelymatt' %}"><img id="player" src="{% static 'salt/images/IMG_7156.jpg' %}"></a>
-        <div id="player_text"><h3>lonelymatt</h3></div>
+   <h3>
+
+    <div class="flex-container">
+        <div id="player-container">
+            <a href="{% url 'salt_app:lonelymatt' %}" id="player-link">
+                <img id="player" src="{% static 'salt/images/IMG_7156.jpg' %}">
+                <div id="player_text">
+                    <h3>lonelymatt</h3>
+                    matt(hew) chung
+                    <br/><br/>
+                    <li>video editor</li>
+                    <li>webpage manager</li>
+                    <li>player</li>
+                    <br/>
+                    "resident abb"
+                </div>
+            </a>
+        </div>
+        <div id="player-container">
+            <a href="{% url 'salt_app:lonelymatt' %}" id="player-link">
+                <img id="player" src="{% static 'salt/images/IMG_7156.jpg' %}">
+                <div id="player_text">
+                    <h3>lonelymatt</h3>
+                    matt(hew) chung
+                    <br/><br/>
+                    <li>video editor</li>
+                    <li>webpage manager</li>
+                    <li>player</li>
+                    <br/>
+                    "resident abb"
+                </div>
+            </a>
+        </div>
     </div>
+
+    
+
+    </h3>
+
     <p>
+        
         <a class="grayButton" href="{% url 'salt_app:puresalt' %}">puresalt</a>
         <a class="grayButton" href="{% url 'salt_app:shrutik' %}">shrutik</a>
         <a class="grayButton" href="{% url 'salt_app:nessboy12' %}">nessboy12</a>
