@@ -32,7 +32,6 @@ h4, h5, h6, p, ul {
 
 ul, li {
     text-align: left;
-    margin-left: 20px;
 }
 
 div {
@@ -143,6 +142,11 @@ a:active {
     transition-duration: 0.5s;
     letter-spacing: 2px;
     width: 100%; /* Ensure the text container spans the full width */
+}
+
+#player_text ul, li {
+    text-align: left;
+    margin-left: 20px;
 }
 
 #player-container:hover #player_text {
