@@ -9,9 +9,29 @@
 
 <h3>members</h3>
    {% block content %}
-   <h4>
+   
+   <p>click below to learn more about any of our talented and wonderful team members!</p>
+   <h3>
+
+
+    
 
     <div class="flex-container">
+        
+        <div id="player-container">
+            <a href="{% url 'salt_app:shrutik' %}" id="player-link">
+                <img id="player" src="{% static 'salt\images\AP1GczPTQmYZbbY06fXtzloEN4faYHKKTrvL4bjkcHsX7Q54ir7zACv-wESWw1168-h1556-s-no-gm.png' %}">
+                <div id="player_text">
+                    <h3>puresalt</h3>
+                    james peck
+                    <br/><br/>
+                    <li>team owner</li>
+                    <li>player</li>
+                    <br/>
+                    "disturbling good w/ dk"
+                </div>
+            </a>
+        </div>
         <div id="player-container">
             <a href="{% url 'salt_app:lonelymatt' %}" id="player-link">
                 <img id="player" src="{% static 'salt/images/IMG_7156.jpg' %}">
@@ -56,30 +76,16 @@
             </a>
         </div>
 
-        <div id="player-container">
-            <a href="{% url 'salt_app:shrutik' %}" id="player-link">
-                <img id="player" src="{% static 'salt\images\AP1GczPTQmYZbbY06fXtzloEN4faYHKKTrvL4bjkcHsX7Q54ir7zACv-wESWw1168-h1556-s-no-gm.png' %}">
-                <div id="player_text">
-                    <h3>snorlax</h3>
-                    jason chou
-                    <br/><br/>
-                    <li>player</li>
-                    <br/>
-                    "gib"
-                </div>
-            </a>
-        </div>
+        
     </div>
 
     
 
-    </h4>
+    </h3>
 
     <p>
         
         <a class="grayButton" href="{% url 'salt_app:puresalt' %}">puresalt</a>
-        <a class="grayButton" href="{% url 'salt_app:shrutik' %}">shrutik</a>
-        <a class="grayButton" href="{% url 'salt_app:nessboy12' %}">nessboy12</a>
         <a class="grayButton" href="{% url 'salt_app:latios' %}">latios</a>
         <a class="grayButton" href="{% url 'salt_app:dtier' %}">dtier</a>
         <a class="grayButton" href="{% url 'salt_app:rodnysalt' %}">rodnysalt</a>

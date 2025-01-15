@@ -106,8 +106,8 @@ a:active {
 
 #player-container {
     position: relative;
-    width: 275px; /* Set fixed width */
-    height: 275px; /* Set fixed height */
+    width: 300px; /* Set fixed width */
+    height: 300px; /* Set fixed height */
     border: 4px solid #e7e7e7; /* Add border */
     overflow: hidden; /* Prevent content overflow */
     box-sizing: border-box; /* Include padding and border in element's total width/height */
@@ -115,6 +115,7 @@ a:active {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
     float: left;
 }
 
@@ -122,7 +123,7 @@ a:active {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+    transition-duration: 0.5s;
 }
 
 /* Hover effect: Image fades, but border stays */
@@ -136,7 +137,7 @@ a:active {
     position: absolute;
     top: 50%; /* Move down 50% from the top */
     left: 50%; /* Move right 50% from the left */
-    transform: translate(-50%, -60%); /* Center the element */
+    transform: translate(-50%, -55%); /* Center the element */
     margin: 0; /* Remove unnecessary margins */
     color: white;
     transition-duration: 0.5s;
