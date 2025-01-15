@@ -32,6 +32,7 @@ h4, h5, h6, p, ul {
 
 ul, li {
     text-align: left;
+    margin-left: 20px;
 }
 
 div {
@@ -96,7 +97,7 @@ a:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Center the items horizontally */
-    gap: 10px; /* Remove gap to eliminate space between items */
+    gap: 20px; /* Remove gap to eliminate space between items */
     padding: 0; /* Remove padding inside the container */
     margin: 0; /* Remove margin around the container */
     width: 100%; /* Ensure it takes up the full width */
@@ -105,8 +106,8 @@ a:active {
 
 #player-container {
     position: relative;
-    width: 250px; /* Set fixed width */
-    height: 250px; /* Set fixed height */
+    width: 275px; /* Set fixed width */
+    height: 275px; /* Set fixed height */
     border: 4px solid #e7e7e7; /* Add border */
     overflow: hidden; /* Prevent content overflow */
     box-sizing: border-box; /* Include padding and border in element's total width/height */
@@ -114,7 +115,7 @@ a:active {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    float:left;
+    float: left;
 }
 
 #player {
@@ -129,19 +130,20 @@ a:active {
     opacity: 0.3; /* Only fades the image */
 }
 
-#player_text{
+#player_text {
     text-align: center;
     opacity: 0.0;
     position: absolute;
-    top: 0%;
-    left: 5%;
-    margin: 4px 2px;
+    top: 50%; /* Move down 50% from the top */
+    left: 50%; /* Move right 50% from the left */
+    transform: translate(-50%, -60%); /* Center the element */
+    margin: 0; /* Remove unnecessary margins */
     color: white;
-    /* transform: translate(-50%, -50%); */
     transition-duration: 0.5s;
     letter-spacing: 2px;
+    width: 100%; /* Ensure the text container spans the full width */
 }
 
-#player-container:hover #player_text{
+#player-container:hover #player_text {
     opacity: 1.0;
 }
