@@ -30,6 +30,14 @@ h4, h5, h6, p, ul {
     letter-spacing: 3px;
 }
 
+@media (max-width: 900px) {
+    h4, h5, h6, p, ul {
+        margin-left: 5%;
+        margin-right: 5%;
+        letter-spacing: 3px;
+    }  
+}
+
 h4 {
     font-size: 35px;
 }
