@@ -163,12 +163,21 @@ a:active {
     opacity: 1.0;
 }
 
-#margin-image {
+@media (min-width: 900px) {
+    #margin-image {
     display: flex;
     position: relative;
+    }
 }
 
+
+
 @media (max-width: 900px) {
+
+    #margin-image {
+        opacity: 0
+        }
+    
     h4, h5, h6, p, ul {
         margin-left: 5%;
         margin-right: 5%;
