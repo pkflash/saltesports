@@ -49,18 +49,18 @@ div {
 }
 
 a {
-    color: #ffffff;
+    color: #e7e7e7;
     text-decoration: none;
     transition-duration: 0.4s;
     }
 
 a:hover {
-    color: #e7e7e7;
+    color: #ffffff;
     text-decoration: none;
     }
 
 a:active {
-    color: #e7e7e7;
+    color: #ffffff;
     text-decoration: none;
     }
     
