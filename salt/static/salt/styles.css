@@ -49,7 +49,7 @@ div {
 }
 
 a {
-    color: #837d7d;
+    color: #858585;
     text-decoration: none;
     transition-duration: 0.4s;
     }
@@ -200,11 +200,21 @@ a:active {
         0% { opacity: 0; }
         100% { opacity: 1; }
       }
+
+      #page-profile-picture {
+            display: flex;
+            position: relative;
+            top: 50px; right: 25%; width: 200px; height: 200px; float: right;
+      }
 }
 
 
 
 @media (max-width: 900px) {
+
+    #margin-image {
+        opacity: 0;
+    }
     
     h4, h5, h6, p, ul {
         margin-left: 5%;
@@ -237,6 +247,14 @@ a:active {
         width: 100%; /* Ensure it takes up the full width */
         box-sizing: border-box; /* Include padding/border in width calculations */
     }
+
+    #page-profile-picture {
+        display: flex;
+        position: relative;
+        top: 50px; right: 5%; width: 200px; height: 200px; float: right;
+  }
+
+
 }
 
 @media (max-width: 500px) {
