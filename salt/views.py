@@ -25,6 +25,9 @@ def puresalt(request):
 def shrutik(request):
     return render(request, "salt/members/shrutik.html")
 
+def shrutikmk(request):
+    return render(request, "salt/members/shrutikmk.html")
+
 def nessboy12(request):
     return render(request, "salt/members/nessboy12.html")
 
