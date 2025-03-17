@@ -1,6 +1,37 @@
 {% extends "salt/saltesports.html" %}
 
+{% load static %}
+
 {% block body %}
 <h3>gallery</h3>
 
+<h3>
+
+    <div class="galleryflex-container">
+        <div id="gallery-container">
+            <img id="picture" src="{% static 'salt\images\Will vs Gackt.jpg' %}">
+        </div>
+
+        <div id="gallery-container">
+            <img id="picture" src="{% static 'salt\images\Andrew Popoff.jpg' %}">
+        </div>
+
+        <div id="gallery-container">
+            <img id="picture" src="{% static '\salt\images\Luis at Genesis.jpg' %}">
+        </div>
+
+        <div id="gallery-container">
+            <img id="picture" src="{% static 'salt\images\DSC02432.jpg' %}">
+        </div>
+
+        <div id="gallery-container">
+            <img id="picture" src="{% static 'salt\images\IMG_2395.png' %}">
+        </div>
+
+        <div id="gallery-container">
+            <img id="picture" src="{% static 'salt\images\7ae48359ff0749cd1f3da1379829d4fe.jpg' %}">
+        </div>
+    </div>
+
+</h3>
 {% endblock %}
