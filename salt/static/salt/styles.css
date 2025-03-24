@@ -200,6 +200,24 @@ a:active {
     opacity: 0.7;
 }
 
+#gallery_text {
+    text-align: center;
+    opacity: 0.0;
+    position: absolute;
+    top: 50%; /* Move down 50% from the top */
+    left: 50%; /* Move right 50% from the left */
+    transform: translate(-50%, -55%); /* Center the element */
+    margin: 0; /* Remove unnecessary margins */
+    color: white;
+    transition-duration: 0.5s;
+    letter-spacing: 2px;
+    width: 100%; /* Ensure the text container spans the full width */
+}
+
+#gallery-container:hover #gallery_text {
+    opacity: 1.0;
+}
+
 @media (min-width: 900px) {
     #margin-image {
     display: flex;
