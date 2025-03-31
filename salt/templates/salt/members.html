@@ -2,214 +2,36 @@
 
 {% load static %}
 
-
 {% block body %}
-
-
-
 <h3>members</h3>
-   {% block content %}
-   
-   <p>click below to learn more about our talented and wonderful team members!</p>
-   <h3>
 
+<p>click below to learn more about our talented and wonderful team members!</p>
 
-    
+<div class="flex-container">
+    {% for member in members %}
+    <div id="player-container">
+        <a href="{% if member.username == 'lui$' %}{% url 'salt_app:lui' %}{% else %}{% url 'salt_app:'|add:member.username %}{% endif %}" id="player-link">
+            <img id="player" src="{{ member.image.url }}" alt="{{ member.username }}">
+            <div id="player_text">
+                <h3>{{ member.username }}</h3>
+                {{ member.full_name }}
+                <br/><br/>
+                {% for role in member.roles %}
+                <li>{{ role|cut:"'"|cut:'"'|cut:'['|cut:']' }}</li>
+                {% endfor %}
+                <br/>
+                {% if member.quote %}
+                "{{ member.quote }}"
+                {% endif %}
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
 
-    <div class="flex-container">
-        
-        <div id="player-container">
-            <a href="{% url 'salt_app:shrutikmk' %}" id="player-link">
-                <img id="player" src="{% static 'salt\images\AP1GczPTQmYZbbY06fXtzloEN4faYHKKTrvL4bjkcHsX7Q54ir7zACv-wESWw1168-h1556-s-no-gm.png' %}">
-                <div id="player_text">
-                    <h3>puresalt</h3>
-                    james peck
-                    <br/><br/>
-                    <li>team owner</li>
-                    <li>player</li>
-                    <br/>
-                    "disturbingly good w/ dk"
-                </div>
-            </a>
-        </div>
-
-        <div id="player-container">
-            <a href="{% url 'salt_app:lui$' %}" id="player-link" style="width: 150%;">
-                <img id="player" src="{% static 'salt\images\image0.jpg' %}">
-                <div id="player_text">
-                    <h3>lui$</h3>
-                    luis oceguera
-                    <br/><br/>
-                    <li>player</li>
-                    <br/>
-                    "norcal's goat"
-                </div>
-            </a>
-        </div>
-        <div id="player-container">
-            <a href="{% url 'salt_app:lonelymatt' %}" id="player-link">
-                <img id="player" src="{% static 'salt/images/IMG_7156.jpg' %}">
-                <div id="player_text">
-                    <h3>lonelymatt</h3>
-                    matt(hew) chung
-                    <br/><br/>
-                    <li>video editor</li>
-                    <li>webpage manager</li>
-                    <li>player</li>
-                    <br/>
-                    "norcal's resident abb"
-                </div>
-            </a>
-        </div>
-        <div id="player-container">
-            <a href="{% url 'salt_app:nessboy12' %}" id="player-link">
-                <img id="player" src="{% static 'salt\images\IMG_7487.jpg' %}">
-                <div id="player_text">
-                    <h3>nessboy12</h3>
-                    andrew nguyen
-                    <br/><br/>
-                    <li>webpage manager</li>
-                    <li>player</li>
-                    <br/>
-                    "adderall ness"
-                </div>
-            </a>
-        </div>
-        <div id="player-container">
-            <a href="{% url 'salt_app:shrutik' %}" id="player-link">
-                <img id="player" src="{% static 'salt\images\AP1GczPTQmYZbbY06fXtzloEN4faYHKKTrvL4bjkcHsX7Q54ir7zACv-wESWw1168-h1556-s-no-gm.png' %}">
-                <div id="player_text">
-                    <h3>$hrutik</h3>
-                    shrutik kulkarni
-                    <br/><br/>
-                    <li>team manager</li>
-                    <li>player</li>
-                    <br/>
-                    "group leader"
-                </div>
-            </a>
-        </div>
-        <div id="player-container">
-            <a href="{% url 'salt_app:snorlax' %}" id="player-link">
-                <img id="player" src="{% static 'salt\images\KS3K631k.jpg' %}" style="width: 150%;">
-                <div id="player_text">
-                    <h3>snorlax</h3>
-                    jason chou
-                    <br/><br/>
-                    <li>commentator</li>
-                    <br/>
-                    "guildhouse employee"
-                </div>
-            </a>
-        </div>
-        <div id="player-container">
-            <a href="{% url 'salt_app:steamy' %}" id="player-link">
-                <img id="player" src="{% static 'salt\images\9aa06cfd-d136-4d9a-b9ab-4a266f99988a.png' %}">
-                <div id="player_text">
-                    <h3>steamy</h3>
-                    eli levinson
-                    <br/><br/>
-                    <li>player</li>
-                    <br/>
-                    "forever faded"
-                </div>
-            </a>
-        </div>
-
-        <div id="player-container">
-            <a href="{% url 'salt_app:marsbars' %}" id="player-link">
-                <img id="player" src="{% static 'salt\images\marsbars.png' %}">
-                <div id="player_text">
-                    <h3>marsbars</h3>
-                    Mario Valenzuela
-                    <br/><br/>
-                    <li>commentator</li>
-                    <li>player</li>
-                    <br/>
-                    "Mario Barrio"
-                </div>
-            </a>
-        </div>
-
-        <div id="player-container">
-            <a href="{% url 'salt_app:latios' %}" id="player-link">
-                <img id="player" src="{% static 'salt\images\latios.jpg' %}" style="position: relative; top:70px;">
-                <div id="player_text">
-                    <h3>latio$</h3>
-                    Michael Sheen
-                    <br/><br/>
-                    <li>player</li>
-                    <br/>
-                </div>
-            </a>
-        </div>
-
-        <div id="player-container">
-            <a href="{% url 'salt_app:fletchling' %}" id="player-link">
-                <img id="player" src="{% static 'salt\images\Fletchling2.png' %}">
-                <div id="player_text">
-                    <h3>fletchling</h3>
-                    melissa grove
-                    <br/><br/>
-                    <li>player</li>
-                    <br/>
-                    "queen of north bay"
-                </div>
-            </a>
-        </div>
-
-        
-
-        <!-- IKAN BUTTON -->
-        <!-- <div id="player-container">
-            <a href="{% url 'salt_app:ikan' %}" id="player-link">
-                <img id="player" src="{% static 'salt\images\ikan.jpg' %}" style="height: 300px; width: 300px;">
-                <div id="player_text">
-                    <h3>ikan</h3>
-                    anik singh
-                    <br/><br/>
-                    <li>player</li>
-                    <br/>
-                    "world warrior"
-                </div>
-            </a>
-        </div>
-        
-    </div> -->
-
-    
-
-    </h3>
-
-    <p>
-        
-        <a class="grayButton" href="{% url 'salt_app:puresalt' %}">puresalt</a>
-        <a class="grayButton" href="{% url 'salt_app:dtier' %}">dtier</a>
-        <a class="grayButton" href="{% url 'salt_app:rodnysalt' %}">rodnysalt</a>
-        <a class="grayButton" href="{% url 'salt_app:era' %}">era</a>
-        <a class="grayButton" href="{% url 'salt_app:widara' %}">widara</a>
-        <a class="grayButton" href="{% url 'salt_app:azrael' %}">azrael</a>
-        <a class="grayButton" href="{% url 'salt_app:lui$' %}">lui$</a>
-        <a class="grayButton" href="{% url 'salt_app:phi' %}">phi</a>
-
-        <!--<a href="{% url 'salt_app:lonelymatt' %}">
-            <img class="imageButton" src="{% static 'salt/images/IMG_7156.jpg' %}" alt="matt">
-        </a> -->
-        
-        <a class="button grayButton" href="{% url 'salt_app:snorlax' %}">snorlax</a>
-        <a class="button grayButton" href="{% url 'salt_app:versedace' %}">versed ace</a>
-
-        <!-- UNREVEALED PLAYERS-->
-        <!-- <a class="button grayButton" href="{% url 'salt_app:saltlord' %}">saltlord</a> -->
-        <!-- <a class="button grayButton" href="{% url 'salt_app:alsoda' %}">alsoda</a> -->
-        <!-- <a class="button grayButton" href="{% url 'salt_app:ikan' %}">ikan</a> -->
-        <!-- <a class="button grayButton" href="{% url 'salt_app:kurama' %}">kurama</a> -->
-
-
-        
-    
-    </p>
-    
-    {% endblock %}
-
+<p>
+    {% for member in members %}
+    <a class="grayButton" href="{% if member.username == 'lui$' %}{% url 'salt_app:lui' %}{% else %}{% url 'salt_app:'|add:member.username %}{% endif %}">{{ member.username }}</a>
+    {% endfor %}
+</p>
 {% endblock %}

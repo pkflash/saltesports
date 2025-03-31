@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.http import HttpResponse
+from .models import Member
 
 # Create your views here.
 def home(request):
@@ -14,25 +16,13 @@ def gallery(request):
     return render(request, "salt/gallery.html")
 
 def members(request):
-    return render(request, "salt/members.html")
-
-def recent(request):
-    return render(request, "salt/recent.html")
+    members = Member.objects.filter(is_active=True)
+    return render(request, "salt/members.html", {
+        "members": members
+    })
 
 def puresalt(request):
     return render(request, "salt/members/puresalt.html")
-
-def shrutik(request):
-    return render(request, "salt/members/shrutik.html")
-
-def shrutikmk(request):
-    return render(request, "salt/members/shrutikmk.html")
-
-def nessboy12(request):
-    return render(request, "salt/members/nessboy12.html")
-
-def latios(request):
-    return render(request, "salt/members/latios.html")
 
 def dtier(request):
     return render(request, "salt/members/dtier.html")
@@ -40,29 +30,17 @@ def dtier(request):
 def rodnysalt(request):
     return render(request, "salt/members/rodnysalt.html")
 
-def azrael(request):
-    return render(request, "salt/members/azrael.html")
-
-def steamy(request):
-    return render(request, "salt/members/steamy.html")
-
-def rileygibson(request):
+def era(request):
     return render(request, "salt/members/era.html")
 
 def widara(request):
     return render(request, "salt/members/widara.html")
 
-def venuspenis(request):
-    return render(request, "salt/members/marsbars.html")
+def azrael(request):
+    return render(request, "salt/members/azrael.html")
 
-def fletchling(request):
-    return render(request, "salt/members/fletchling.html")
-
-def luis(request):
-    return render(request, "salt/members/luis.html")
-
-def matt(request):
-    return render(request, "salt/members/matt.html")
+def lui(request):
+    return render(request, "salt/members/lui$.html")
 
 def phi(request):
     return render(request, "salt/members/phi.html")
@@ -70,7 +48,7 @@ def phi(request):
 def snorlax(request):
     return render(request, "salt/members/snorlax.html")
 
-def versed(request):
+def versedace(request):
     return render(request, "salt/members/versedace.html")
 
 def saltlord(request):
@@ -84,3 +62,30 @@ def ikan(request):
 
 def kurama(request):
     return render(request, "salt/members/kurama.html")
+
+def shrutikmk(request):
+    return render(request, "salt/members/shrutikmk.html")
+
+def lonelymatt(request):
+    return render(request, "salt/members/lonelymatt.html")
+
+def nessboy12(request):
+    return render(request, "salt/members/nessboy12.html")
+
+def shrutik(request):
+    return render(request, "salt/members/shrutik.html")
+
+def steamy(request):
+    return render(request, "salt/members/steamy.html")
+
+def marsbars(request):
+    return render(request, "salt/members/marsbars.html")
+
+def latios(request):
+    return render(request, "salt/members/latios.html")
+
+def fletchling(request):
+    return render(request, "salt/members/fletchling.html")
+
+def recent(request):
+    return render(request, "salt/recent.html")
