@@ -93,7 +93,7 @@ def add_member_data(apps, schema_editor):
             'quote': 'queen of north bay',
             'image': 'salt/images/Fletchling2.png',
             'order': 10,
-            'is_active': True
+            'is_active': False
         }
     ]
     
