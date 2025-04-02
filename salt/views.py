@@ -2,6 +2,20 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Member
 
+# Map usernames to URL pattern names
+USERNAME_TO_URL = {
+    'lui$': 'luis',
+    'puresalt': 'puresalt',
+    'shrutik': 'shrutik',
+    'nessboy12': 'nessboy12',
+    'latios': 'latios',
+    'steamy': 'steamy',
+    'marsbars': 'marsbars',
+    'fletchling': 'fletchling',
+    'lonelymatt': 'lonelymatt',
+    'snorlax': 'snorlax'
+}
+
 # Create your views here.
 def home(request):
     return render(request, "salt/saltesports.html")
@@ -18,7 +32,8 @@ def gallery(request):
 def members(request):
     members = Member.objects.filter(is_active=True)
     return render(request, "salt/members.html", {
-        "members": members
+        "members": members,
+        "username_to_url": USERNAME_TO_URL
     })
 
 def puresalt(request):
@@ -39,7 +54,7 @@ def widara(request):
 def azrael(request):
     return render(request, "salt/members/azrael.html")
 
-def lui(request):
+def luis(request):
     return render(request, "salt/members/lui$.html")
 
 def phi(request):
