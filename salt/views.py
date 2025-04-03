@@ -31,9 +31,10 @@ def gallery(request):
 
 def members(request):
     members = Member.objects.filter(is_active=True)
+    for member in members:
+        member.url_name = 'salt_app:' + USERNAME_TO_URL.get(member.username, member.username)
     return render(request, "salt/members.html", {
-        "members": members,
-        "username_to_url": USERNAME_TO_URL
+        "members": members
     })
 
 def puresalt(request):
@@ -55,7 +56,7 @@ def azrael(request):
     return render(request, "salt/members/azrael.html")
 
 def luis(request):
-    return render(request, "salt/members/lui$.html")
+    return render(request, "salt/members/luis.html")
 
 def phi(request):
     return render(request, "salt/members/phi.html")

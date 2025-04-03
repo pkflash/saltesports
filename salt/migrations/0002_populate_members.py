@@ -15,7 +15,7 @@ def add_member_data(apps, schema_editor):
             'is_active': True
         },
         {
-            'username': 'lui$',
+            'username': 'luis',
             'full_name': 'luis oceguera',
             'roles': ['player'],
             'quote': 'norcal\'s goat',
